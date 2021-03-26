@@ -24,7 +24,7 @@
 
 1. Check your mirroring succeeded in `./mirror/*` or typing `du -sh ./mirror` to check the volume
 
-    The default configuration should make you download _XX G_
+    The default configuration should make you download _49 G_
 
 2. Run the server :
 
@@ -40,5 +40,5 @@ To point your EPEL clients to your mirror, create a `/etc/yum.repos.d/local-epel
 
 _TO DO_
 
-:point_right: Feel free to add a reverse proxy or update the [nginx configuration file](./nginx.conf) to secure the mirror with SSL/TLS  
+:point_right: Please cite my work if you're using it !
 :point_right: Feel free to send **pull requests** as well !
