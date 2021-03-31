@@ -39,7 +39,7 @@
 On you server, retrieve and add the GPG key :
 
 ```bash
-wget http://192.168.0.24:10082/RPM-GPG-KEY-EPEL-7 # https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7
+wget http://192.168.0.24:10081/RPM-GPG-KEY-EPEL-7 # https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7
 rpm --import RPM-GPG-KEY-EPEL-7
 ```
 
