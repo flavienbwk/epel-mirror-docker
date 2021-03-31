@@ -6,6 +6,10 @@ version="7"
 src=https://dl.fedoraproject.org/pub/epel
 dest=/downloads
 
+# Download gpg key
+wget -v https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7 -P "$dest"
+
+# Download mirror
 for arch in "x86_64"
 do
 	arch_src="$src/${version}/$arch"

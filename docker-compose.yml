@@ -18,4 +18,4 @@ services:
         volumes:
             - "./mirror:/downloads:ro"
         ports:
-            - "8080:80"
+            - "10081:80"
