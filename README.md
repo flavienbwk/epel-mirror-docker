@@ -39,7 +39,7 @@
 On you server, retrieve and add the GPG key :
 
 ```bash
-wget http://192.168.0.24:10081/RPM-GPG-KEY-EPEL-7 # https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7
+wget http://localhost:8080/RPM-GPG-KEY-EPEL-7 # https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7
 rpm --import RPM-GPG-KEY-EPEL-7
 ```
 
@@ -47,8 +47,8 @@ To point your EPEL clients to your mirror, create a `/etc/yum.repos.d/local-epel
 
 ```conf
 [mymirror-epel]
-name=My CentOS 7 EPEL local mirror for os packages
-baseurl=http://192.168.0.24:10081/7/$basearch/
+name=My CentOS 7 EPEL local mirror
+baseurl=http://localhost:8080/7/$basearch/
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
 enabled=1
 ```
