@@ -38,7 +38,13 @@
 
 To point your EPEL clients to your mirror, create a `/etc/yum.repos.d/local-epel-mirror.repo` file as follow :
 
-_TO DO_
+```conf
+[mymirror-epel]
+name=My CentOS 7 EPEL local mirror for os packages
+baseurl=http://192.168.0.24:10081/7/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+enabled=1
+```
 
 :point_right: Please cite my work if you're using it !
 :point_right: Feel free to send **pull requests** as well !
